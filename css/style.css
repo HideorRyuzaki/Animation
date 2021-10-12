@@ -47,6 +47,14 @@
 	top: 50px;
 	animation: health-animation 3s infinite;
 }
+.start {
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
 
 /*LEFT PLAYER*/
 .left-life-1 {
@@ -81,7 +89,14 @@
 	bottom: 120px;
 	animation: knight-animation 10s infinite;
 }
-
+.kaboom {
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	left: 460px;
+	bottom: 180px;
+	animation: kaboom-animation 4s infinite;
+}
 
 
 /*RIGHT PLAYER*/
@@ -127,59 +142,12 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*KEYFRAMES*/
-@keyframes mountain-animation {
-	0% {top: 450px;}
-	50% {top: 350px;}
-	100% {top: 450px;}
-}
-@keyframes mountain2-animation {
-	0% {top: 100px;}
-	50% {top: 200px;}
-	100% {top: 100px;}
-}
-@keyframes health-animation {
-	0% {top: 50px;}
-	50% {top: 20px;}
-	100% {top: 50px;}
-}
-@keyframes life-animation {
-	0% {top: 150px;}
-	50% {top: 100px;}
-	100% {top: 150px;}
-}
-@keyframes knight-animation {
-	0% {left: 150px;}
-	25% {bottom: 150px}
-	50% {left: 500px;}
-	75% {bottom: 220px;}
-	100% {right: 150px;}
-}
-@keyframes sorcerer-animation {
-	0% {right: 0px;}
-	25% {bottom: 100px}
-	50% {right: 200px;}
-	75% {bottom: 300px;}
-	100% {right: 100px;}
-}
-@keyframes fireball-animation {
-	0% {right: 300px;}
-	25% {bottom: 150px;}
-	50% {right: 1200px;}
-	100% {right: 300px;}
+/*DETAILS*/
+.dragon {
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	right: 250px;
+	bottom: 700px;
+	animation: dragon-animation 15s infinite;
 }
