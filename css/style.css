@@ -1,0 +1,185 @@
+.wrapper {
+	position: relative;
+	transition-property: all;
+}
+.mountain-left {
+	display: inline-block;
+	top: 347px;
+	left: 0px;
+	animation: mountain-animation 6s infinite;
+	transition-timing-function: linear;
+	position: absolute;
+}
+.mountain-mid {
+	display: inline-block;
+	top: 133px;
+	left: 144px;
+	animation: mountain2-animation 10s infinite;
+	transition-timing-function: linear;
+	position: absolute;
+}
+.mountain-right {
+	display: inline-block;
+	top: 347px;
+	right: 0px;
+	animation: mountain-animation 6s infinite;
+	transition-timing-function: linear;
+	position: absolute;
+}
+.ground {
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+}
+.health-bar-left {
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	animation: health-animation 3s infinite;
+}
+.health-bar-right {
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	right: 50px;
+	top: 50px;
+	animation: health-animation 3s infinite;
+}
+
+/*LEFT PLAYER*/
+.left-life-1 {
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	left: 50px;
+	top: 120px;
+	animation: life-animation 3s infinite;
+}
+.left-life-2 {
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	left: 110px;
+	top: 120px;
+	animation: life-animation 3s infinite;
+}
+.left-life-3 {
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	left: 170px;
+	top: 120px;
+	animation: life-animation 3s infinite;
+}
+.knight {
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	left: 170px;
+	bottom: 120px;
+	animation: knight-animation 10s infinite;
+}
+
+
+
+/*RIGHT PLAYER*/
+.right-life-1 {
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	right: 50px;
+	top: 120px;
+	animation: life-animation 3s infinite;
+}
+.right-life-2 {
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	right: 110px;
+	top: 120px;
+	animation: life-animation 3s infinite;
+}
+.right-life-3 {
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	right: 170px;
+	top: 120px;
+	animation: life-animation 3s infinite;
+}
+.sorcerer {
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	right: 170px;
+	bottom: 120px;
+	animation: sorcerer-animation 3s infinite;
+}
+.fireball {
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	right: 350px;
+	bottom: 250px;
+	animation: fireball-animation 3s infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*KEYFRAMES*/
+@keyframes mountain-animation {
+	0% {top: 450px;}
+	50% {top: 350px;}
+	100% {top: 450px;}
+}
+@keyframes mountain2-animation {
+	0% {top: 100px;}
+	50% {top: 200px;}
+	100% {top: 100px;}
+}
+@keyframes health-animation {
+	0% {top: 50px;}
+	50% {top: 20px;}
+	100% {top: 50px;}
+}
+@keyframes life-animation {
+	0% {top: 150px;}
+	50% {top: 100px;}
+	100% {top: 150px;}
+}
+@keyframes knight-animation {
+	0% {left: 150px;}
+	25% {bottom: 150px}
+	50% {left: 500px;}
+	75% {bottom: 220px;}
+	100% {right: 150px;}
+}
+@keyframes sorcerer-animation {
+	0% {right: 0px;}
+	25% {bottom: 100px}
+	50% {right: 200px;}
+	75% {bottom: 300px;}
+	100% {right: 100px;}
+}
+@keyframes fireball-animation {
+	0% {right: 300px;}
+	25% {bottom: 150px;}
+	50% {right: 1200px;}
+	100% {right: 300px;}
+}
